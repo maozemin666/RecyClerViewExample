@@ -22,7 +22,6 @@ public class EventBusActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_bus);
         EventBus.getDefault().register(this);
 
         mButton = findViewById(R.id.btn_go);
@@ -46,5 +45,20 @@ public class EventBusActivity extends BaseActivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onReceiveMsg(EventMessage eventMessage) {
         Toast.makeText(this, "eventbus ok  MAIN", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_event_bus;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void init() {
+
     }
 }

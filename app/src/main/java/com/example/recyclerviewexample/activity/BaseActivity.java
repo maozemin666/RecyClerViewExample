@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class BaseActivity extends AppCompatActivity {
+import com.example.recyclerviewexample.activity.base.BaseView;
+
+public abstract class BaseActivity extends AppCompatActivity implements BaseView {
     private static final String TAG = "BaseActivity";
     private String CLASS_NAME = "CLASS_NAME";
 
@@ -15,6 +17,9 @@ public class BaseActivity extends AppCompatActivity {
         CLASS_NAME = getClass().getSimpleName();
         Log.d(TAG, "onCreate: "+CLASS_NAME);
         super.onCreate(savedInstanceState);
+        setContentView(getLayoutId());
+        initView();
+        init();
     }
 
     @Override
