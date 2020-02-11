@@ -13,7 +13,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activity.KotlinActivity"></activity>
+        <activity android:name=".activity.KotlinActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity android:name=".activity.JsBridgeWebViewActivity" />
         <activity android:name=".activity.WebViewActivity"></activity>
         <activity android:name=".activity.PayDemoActivity" />
@@ -21,11 +28,7 @@
         <activity android:name=".activity.MvpActivity" />
         <activity android:name=".activity.EventBusActivity" />
         <activity android:name=".activity.GlideActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.IndexBarActivity" />
         <activity android:name=".activity.CutomViewActivity" />
