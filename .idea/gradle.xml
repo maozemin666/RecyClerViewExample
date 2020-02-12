@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/JPushExample(1569678)" />
             <option value="$PROJECT_DIR$/Observer" />
             <option value="$PROJECT_DIR$/app" />
           </set>

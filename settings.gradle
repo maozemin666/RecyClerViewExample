@@ -1,1 +1,1 @@
-include ':app', ':Observer'
+include ':app', ':Observer', ':JPushExample(1569678)'
