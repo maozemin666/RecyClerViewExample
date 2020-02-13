@@ -2,6 +2,7 @@ package com.example.jpushdemo;
 
 import android.content.Context;
 
+import cn.jpush.android.api.CustomMessage;
 import cn.jpush.android.api.JPushMessage;
 import cn.jpush.android.service.JPushMessageReceiver;
 
@@ -30,5 +31,15 @@ public class MyJPushMessageReceiver extends JPushMessageReceiver {
     public void onMobileNumberOperatorResult(Context context, JPushMessage jPushMessage) {
         TagAliasOperatorHelper.getInstance().onMobileNumberOperatorResult(context,jPushMessage);
         super.onMobileNumberOperatorResult(context, jPushMessage);
+    }
+
+    /**
+     *   https://juejin.im/post/5e1ef08e5188252c6d368633#heading-15
+     * @param context
+     * @param customMessage
+     */
+    @Override
+    public void onMessage(Context context, CustomMessage customMessage) {
+        super.onMessage(context, customMessage);
     }
 }

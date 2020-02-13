@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.recyclerviewexample">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".RecyclerViewExampleApplication"
         android:allowBackup="true"
@@ -13,29 +18,29 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activity.KotlinActivity">
+        <activity android:name=".activity.XUIActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.KotlinActivity">
 
         </activity>
         <activity android:name=".activity.JsBridgeWebViewActivity" />
-        <activity android:name=".activity.WebViewActivity"></activity>
+        <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.PayDemoActivity" />
         <activity android:name=".activity.RetrofitActivity" />
         <activity android:name=".activity.MvpActivity" />
         <activity android:name=".activity.EventBusActivity" />
-        <activity android:name=".activity.GlideActivity">
-
-        </activity>
+        <activity android:name=".activity.GlideActivity"></activity>
         <activity android:name=".activity.IndexBarActivity" />
         <activity android:name=".activity.CutomViewActivity" />
         <activity android:name=".activity.OkhttpActivity" />
         <activity android:name=".activity.SwipeRefreshLayoutActivity" />
         <activity android:name=".activity.DesignModeActivity" />
-        <activity android:name=".activity.RxjavaActivity"></activity>
+        <activity android:name=".activity.RxjavaActivity" />
         <activity android:name=".activity.ThreadActivity" />
         <activity android:name=".activity.SecondActivity" />
         <activity android:name=".activity.JsonXmlActivity" />
@@ -43,10 +48,5 @@
         <activity android:name=".activity.LoaderActivity" />
         <activity android:name=".recyclerview.refresh.view.RefreshAndMoreActivity1" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

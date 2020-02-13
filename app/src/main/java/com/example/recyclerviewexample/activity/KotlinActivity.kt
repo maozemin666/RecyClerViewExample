@@ -7,10 +7,6 @@ import com.example.recyclerviewexample.kotlin.KotlinDemo
 
 class KotlinActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun getLayoutId(): Int {
         return R.layout.activity_kotlin
     }
