@@ -18,23 +18,23 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activity.XUIActivity">
+        <activity android:name=".activity.JavaBaseActivity"></activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.KotlinActivity">
-
-        </activity>
+        <activity android:name=".activity.XUIActivity"></activity>
+        <activity android:name=".activity.KotlinActivity"></activity>
         <activity android:name=".activity.JsBridgeWebViewActivity" />
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.PayDemoActivity" />
         <activity android:name=".activity.RetrofitActivity" />
         <activity android:name=".activity.MvpActivity" />
         <activity android:name=".activity.EventBusActivity" />
-        <activity android:name=".activity.GlideActivity"></activity>
+        <activity android:name=".activity.GlideActivity" />
         <activity android:name=".activity.IndexBarActivity" />
         <activity android:name=".activity.CutomViewActivity" />
         <activity android:name=".activity.OkhttpActivity" />
