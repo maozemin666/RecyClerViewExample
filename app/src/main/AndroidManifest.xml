@@ -18,7 +18,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activity.JavaBaseActivity"></activity>
+        <activity android:name=".activity.LabelFloLayoutActivity"></activity>
+        <activity android:name=".activity.CustomeViewActivity" />
+        <activity android:name=".activity.JavaBaseActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.XUIActivity"></activity>
-        <activity android:name=".activity.KotlinActivity"></activity>
+        <activity android:name=".activity.XUIActivity" />
+        <activity android:name=".activity.KotlinActivity" />
         <activity android:name=".activity.JsBridgeWebViewActivity" />
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.PayDemoActivity" />

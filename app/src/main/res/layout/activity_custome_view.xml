@@ -7,17 +7,12 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_java_base"
+        android:id="@+id/btn_labelflowlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="btn_java_base"
+        android:text="labelflowlayout"
         android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_custome_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="custome_view"
-        android:textAllCaps="false" />
+
 
 </LinearLayout>

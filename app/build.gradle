@@ -100,4 +100,6 @@ dependencies {
 //    xui  https://github.com/xuexiangjys/XUI
     implementation 'com.github.xuexiangjys:XUI:1.1.2'
 
+    implementation 'com.github.LillteZheng:FlowHelper:v1.20'
+
 }
