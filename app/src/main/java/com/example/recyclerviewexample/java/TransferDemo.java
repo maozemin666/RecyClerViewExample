@@ -3,7 +3,8 @@ package com.example.recyclerviewexample.java;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class TransferDemo {
+public class
+TransferDemo {
 
     static class Student {
         public String name;

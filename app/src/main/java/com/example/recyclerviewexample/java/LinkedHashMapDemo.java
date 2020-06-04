@@ -29,6 +29,7 @@ public class LinkedHashMapDemo {
         linkedHashMap.put(3, 3);
         Set<Map.Entry<Integer, Integer>> entrySet = linkedHashMap.entrySet();
         for (Map.Entry<Integer, Integer> entry : entrySet) {
+
             System.out.println("LinkedHashMapTest: key=" + entry.getKey());
             System.out.println("LinkedHashMapTest: value=" + entry.getValue());
         }
@@ -45,12 +46,15 @@ public class LinkedHashMapDemo {
      * <p>
      * 问题又来了，这种通过赋值的形式有一个缺陷，匿名内部类不可以修改“原来的局部变量”，因为是一份“复制品”，修改复制品对原变量没什么影响啊。
      * <p>
-     * 那怎么办？ Java语言干脆强制要求被匿名内部类访问的外部局部变量必须是final的，什么意思呢？就是“一刀切”，不让修改了。
+     * 那怎么办？ Java语言干脆强制要求被匿名内部类访问的外
+     * 部局部变量必须是final的，什么意思呢？就是“一刀切”，不让修改了。
      */
     LinkedHashMap<Integer, Integer> linkedHashMap;
 
     public void LinkedHashMapTest2() {
-        linkedHashMap = new LinkedHashMap<Integer, Integer>(2) {
+        linkedHashMap = new LinkedHashMap<
+
+                Integer, Integer>(2) {
             @Override
             protected boolean removeEldestEntry(Entry eldest) {
                 return linkedHashMap.size() > 2;
@@ -103,6 +107,8 @@ public class LinkedHashMapDemo {
             System.out.println("LinkedHashMapTest: value=" + entry.getValue());
         }
     }
+
+
 
     public void lruCacheTest() {
         LruCache<Integer, Integer> lruCache = new LruCache<>(4);
