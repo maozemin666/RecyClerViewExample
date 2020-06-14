@@ -97,7 +97,6 @@ public class HttpDemo {
      *
      *
      *
-     *
      * HTTP 和 HTTPS区别
      * HTTP（超文本传输协议）：运行在TCP之上；传输的内容是明文；端口是80
      * HTTPS（安全为目标的HTTP）：运行在SSL/TLS之上，SSL/TLS运行在TCP之上；传输的内容经过加密；端口是443
@@ -114,8 +113,6 @@ public class HttpDemo {
      * http 协议
      * 1.采用C/s模型
      * 2.使用TCP传输协议
-     *
-     *
      * 3.无连接
      * 4.无状态
      *
