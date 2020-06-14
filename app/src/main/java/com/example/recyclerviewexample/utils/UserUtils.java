@@ -2,7 +2,7 @@ package com.example.recyclerviewexample.utils;
 
 import android.util.Log;
 
-import com.example.recyclerviewexample.error.exception.ANError;
+import com.example.recyclerviewexample.java.exception.ANError;
 
 import java.util.ArrayList;
 import java.util.List;

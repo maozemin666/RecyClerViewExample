@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.IndexBarActivity">
+    tools:context=".android.activity.IndexBarActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.example.recyclerviewexample.customveiw.IndexBar
+    <com.example.recyclerviewexample.android.customveiw.IndexBar
         android:id="@+id/index_bar"
         android:layout_width="30dp"
         android:layout_height="match_parent"
