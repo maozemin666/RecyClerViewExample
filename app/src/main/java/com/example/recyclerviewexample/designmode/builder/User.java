@@ -1,6 +1,8 @@
-package com.example.recyclerviewexample.designmode;
+package com.example.recyclerviewexample.designmode.builder;
 
-public class User {
+import androidx.annotation.NonNull;
+
+public class User implements Cloneable {
 
     private final int id;
     private final String name;
@@ -48,5 +50,11 @@ public class User {
             this.phone = phone;
             return this;
         }
+    }
+
+    @NonNull
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

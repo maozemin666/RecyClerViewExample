@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.recyclerviewexample.R;
-import com.example.recyclerviewexample.designmode.User;
+import com.example.recyclerviewexample.designmode.builder.User;
 
 public class DesignModeActivity extends AppCompatActivity {
 

@@ -1,7 +1,5 @@
 package com.example.recyclerviewexample.java;
 
-import java.security.PublicKey;
-
 /**
  * https://juejin.im/post/5e08077e51882512820af8d1
  */

@@ -1,0 +1,12 @@
+ 自定义view的3个要点：
+ 1.布局
+ 2.绘制
+ 3.触摸反馈
+
+ 自定义绘制：
+ 方式：重写绘制方法（onDraw）
+ 绘制的关键：Canvas
+    Canvas的绘制类方法：drawXXX (Paint)
+    Canvas的辅助类方法：范围裁切（clipXXX）和几何变换（Matrix）
+ 使用不同的绘制方法来控制遮盖方法
+

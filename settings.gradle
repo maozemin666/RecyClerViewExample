@@ -1,2 +1,3 @@
+include ':JavaBase'
 include ':RxHttpDemo'
 include ':app', ':Observer', ':JPushExample(1569678)', ':weixinpay', ':zxing-lib', ':qrcodelib'

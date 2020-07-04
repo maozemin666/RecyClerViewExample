@@ -1,4 +1,4 @@
-package com.example.recyclerviewexample.java.concurrency.countdownlatch;
+package com.example.recyclerviewexample.java.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 
