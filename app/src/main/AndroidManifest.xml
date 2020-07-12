@@ -22,11 +22,7 @@
         <activity android:name="com.example.recyclerviewexample.android.activity.CustomeViewActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.JavaBaseActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.example.recyclerviewexample.android.activity.XUIActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.KotlinActivity" />
@@ -49,6 +45,13 @@
         <activity android:name="com.example.recyclerviewexample.android.activity.HomeActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.LoaderActivity" />
         <activity android:name=".android.view.RefreshAndMoreActivity1" />
+        <activity android:name=".android.activity.PaintActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
