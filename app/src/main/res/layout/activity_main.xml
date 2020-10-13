@@ -20,4 +20,11 @@
         android:text="custome_view"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="custom_dialog"
+        android:textAllCaps="false" />
+
 </LinearLayout>

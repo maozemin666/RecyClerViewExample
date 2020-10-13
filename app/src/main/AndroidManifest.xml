@@ -22,6 +22,10 @@
         <activity android:name="com.example.recyclerviewexample.android.activity.CustomeViewActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.JavaBaseActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name="com.example.recyclerviewexample.android.activity.XUIActivity" />
         <activity android:name="com.example.recyclerviewexample.android.activity.KotlinActivity" />
@@ -47,10 +51,7 @@
         <activity android:name=".android.activity.PaintActivity">
         </activity>
         <activity android:name="com.zemin.customview.base.banner.demo.BannerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
     </application>
 
