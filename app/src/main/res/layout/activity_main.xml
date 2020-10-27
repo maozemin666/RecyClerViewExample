@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.recyclerviewexample.android.customveiw.TouchViewDemo xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -27,4 +28,4 @@
         android:text="custom_dialog"
         android:textAllCaps="false" />
 
-</LinearLayout>
+</com.example.recyclerviewexample.android.customveiw.TouchViewDemo>

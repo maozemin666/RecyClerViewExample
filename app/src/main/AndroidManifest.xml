@@ -18,41 +18,43 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name="com.example.recyclerviewexample.android.activity.LabelFloLayoutActivity"></activity>
-        <activity android:name="com.example.recyclerviewexample.android.activity.CustomeViewActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.JavaBaseActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.MainActivity">
+        <activity android:name=".android.activity.SimpleRefreshActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.recyclerviewexample.android.activity.XUIActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.KotlinActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.JsBridgeWebViewActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.WebViewActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.PayDemoActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.RetrofitActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.MvpActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.EventBusActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.GlideActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.IndexBarActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.CutomViewActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.OkhttpActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.SwipeRefreshLayoutActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.DesignModeActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.RxjavaActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.ThreadActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.SecondActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.JsonXmlActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.HomeActivity" />
-        <activity android:name="com.example.recyclerviewexample.android.activity.LoaderActivity" />
-        <activity android:name=".android.view.RefreshAndMoreActivity1" />
-        <activity android:name=".android.activity.PaintActivity">
-        </activity>
-        <activity android:name="com.zemin.customview.base.banner.demo.BannerActivity">
+        <activity android:name=".android.activity.LabelFloLayoutActivity" />
+        <activity android:name=".android.activity.CustomeViewActivity" />
+        <activity android:name=".android.activity.JavaBaseActivity" />
+        <activity android:name=".android.activity.MainActivity">
 
         </activity>
+        <activity android:name=".android.activity.XUIActivity" />
+        <activity android:name=".android.activity.KotlinActivity" />
+        <activity android:name=".android.activity.JsBridgeWebViewActivity" />
+        <activity android:name=".android.activity.WebViewActivity" />
+        <activity android:name=".android.activity.PayDemoActivity" />
+        <activity android:name=".android.activity.RetrofitActivity" />
+        <activity android:name=".android.activity.MvpActivity" />
+        <activity android:name=".android.activity.EventBusActivity" />
+        <activity android:name=".android.activity.GlideActivity" />
+        <activity android:name=".android.activity.IndexBarActivity" />
+        <activity android:name=".android.activity.CutomViewActivity" />
+        <activity android:name=".android.activity.OkhttpActivity" />
+        <activity android:name=".android.activity.SwipeRefreshLayoutActivity" />
+        <activity android:name=".android.activity.DesignModeActivity" />
+        <activity android:name=".android.activity.RxjavaActivity" />
+        <activity android:name=".android.activity.ThreadActivity" />
+        <activity android:name=".android.activity.SecondActivity" />
+        <activity android:name=".android.activity.JsonXmlActivity" />
+        <activity android:name=".android.activity.HomeActivity" />
+        <activity android:name=".android.activity.LoaderActivity" />
+        <activity android:name=".android.view.RefreshAndMoreActivity1" />
+        <activity android:name=".android.activity.PaintActivity"></activity>
+        <activity android:name="com.zemin.customview.base.banner.demo.BannerActivity"></activity>
     </application>
 
 </manifest>
