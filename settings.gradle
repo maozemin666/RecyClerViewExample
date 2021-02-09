@@ -1,4 +1,4 @@
 include ':CustomView'
 include ':JavaBase'
 include ':RxHttpDemo'
-include ':app', ':Observer'
+include ':app'
