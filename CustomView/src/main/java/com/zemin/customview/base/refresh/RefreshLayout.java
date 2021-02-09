@@ -7,10 +7,16 @@ import android.view.MotionEvent;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Scroller;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.zemin.customview.R;
+
+/**
+ *
+ */
 public class RefreshLayout extends LinearLayout {
     private static final String TAG = "RefreshLayout";
 
@@ -22,6 +28,7 @@ public class RefreshLayout extends LinearLayout {
 
     private boolean isRefresh = false;
     private final Scroller scroller = new Scroller(getContext());
+    private TextView textView;
 
     public RefreshLayout(Context context) {
         this(context, null);
@@ -39,10 +46,28 @@ public class RefreshLayout extends LinearLayout {
     }
 
     @Override
+    protected void onFinishInflate() {
+        textView = findViewById(R.id.text);
+    }
+
+    @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
         // View的内容(content)相对于View本身在水平或垂直方向的偏移量.(相反)
         scrollTo(0, getChildAt(0).getHeight());
+        /**
+         注意1：
+         直接用scrollTo是不行的，应该调用父控件的scrollTo。scrollTo移动的是View的Content，如果是TextView，则会发现TextView的文字移动了，但是TextView本身并没有移动。
+         注意2：
+         值为什么是负的？
+         那是因为 移动计算值 = 最开始点坐标 – 最后移动到的坐标。
+         注意3:
+         x、y、left、top、right、bottom都没有变。
+         因为x、y、left、top、right、bottom是相对于父控件而言的，父控件也一起移动了，所以没有变。
+
+         点击事件还是在原位置 （跟动画类似）
+         */
+        textView.scrollTo(0, 500);
     }
 
     @Override

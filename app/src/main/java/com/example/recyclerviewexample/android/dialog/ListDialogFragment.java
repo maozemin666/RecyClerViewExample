@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recyclerviewexample.R;
-import com.lxj.xpopup.util.XPopupUtils;
 
 import java.util.List;
 
@@ -65,7 +65,7 @@ public class ListDialogFragment extends DialogFragment {
         GradientDrawable drawable = new GradientDrawable();
         drawable.setShape(GradientDrawable.RECTANGLE);
         drawable.setColor(Color.parseColor("#EEEEEE"));
-        drawable.setSize(10, XPopupUtils.dp2px(getContext(), .4f));
+        drawable.setSize(10, dp2Px(0.4f));
         decoration.setDrawable(drawable);
         recyclerView.addItemDecoration(decoration);
     }
@@ -83,6 +83,10 @@ public class ListDialogFragment extends DialogFragment {
 
     public void setOnSelectListener(OnSelectListener onSelectListener) {
         this.onSelectListener = onSelectListener;
+    }
+
+    private int dp2Px(float value) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, getResources().getDisplayMetrics());
     }
 
     public interface OnSelectListener {
